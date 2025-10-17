@@ -37,118 +37,195 @@ function Piece({ type, color, position, onClick, isSelected }: PieceProps) {
       case 'p':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.25, 0.3, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.28, 0.32, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.15, 0]}>
-              <cylinderGeometry args={[0.2, 0.22, 0.3, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.18, 0]} castShadow>
+              <cylinderGeometry args={[0.18, 0.25, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.35, 0]}>
-              <sphereGeometry args={[0.15, 16, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.3, 0]} castShadow>
+              <cylinderGeometry args={[0.16, 0.18, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.45, 0]} castShadow>
+              <sphereGeometry args={[0.18, 32, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
           </group>
         );
       case 'r':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.3, 0.35, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.25, 0]}>
-              <cylinderGeometry args={[0.25, 0.25, 0.5, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.2, 0]} castShadow>
+              <cylinderGeometry args={[0.22, 0.28, 0.2, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.55, 0]}>
-              <cylinderGeometry args={[0.3, 0.25, 0.15, 4]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.4, 0]} castShadow>
+              <cylinderGeometry args={[0.24, 0.24, 0.3, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.62, 0]} castShadow>
+              <cylinderGeometry args={[0.28, 0.24, 0.12, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0.18, 0.72, 0]} castShadow>
+              <boxGeometry args={[0.12, 0.18, 0.12]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[-0.18, 0.72, 0]} castShadow>
+              <boxGeometry args={[0.12, 0.18, 0.12]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.72, 0.18]} castShadow>
+              <boxGeometry args={[0.12, 0.18, 0.12]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.72, -0.18]} castShadow>
+              <boxGeometry args={[0.12, 0.18, 0.12]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
           </group>
         );
       case 'n':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.3, 0.35, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.3, 0]} rotation={[0, 0, Math.PI / 8]}>
-              <coneGeometry args={[0.25, 0.6, 4]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.2, 0]} castShadow>
+              <cylinderGeometry args={[0.22, 0.28, 0.2, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0.1, 0.55, 0]}>
-              <sphereGeometry args={[0.12, 8, 8]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0.05, 0.42, 0]} rotation={[0.3, 0, 0.2]} castShadow>
+              <boxGeometry args={[0.28, 0.45, 0.22]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0.08, 0.68, 0.08]} castShadow>
+              <sphereGeometry args={[0.14, 16, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0.12, 0.75, 0.16]} rotation={[-0.5, 0, 0]} castShadow>
+              <coneGeometry args={[0.08, 0.18, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0.05, 0.62, 0.18]} castShadow>
+              <sphereGeometry args={[0.06, 16, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
           </group>
         );
       case 'b':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.3, 0.35, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.3, 0]}>
-              <cylinderGeometry args={[0.22, 0.25, 0.4, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.2, 0]} castShadow>
+              <cylinderGeometry args={[0.22, 0.28, 0.2, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.6, 0]}>
-              <coneGeometry args={[0.2, 0.4, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.35, 0]} castShadow>
+              <sphereGeometry args={[0.24, 32, 32, 0, Math.PI * 2, 0, Math.PI / 2]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.82, 0]}>
-              <sphereGeometry args={[0.08, 16, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.52, 0]} castShadow>
+              <cylinderGeometry args={[0.16, 0.18, 0.25, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.7, 0]} castShadow>
+              <sphereGeometry args={[0.18, 32, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.92, 0]} castShadow>
+              <sphereGeometry args={[0.1, 32, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.98, 0]} rotation={[0.3, 0, 0]} castShadow>
+              <boxGeometry args={[0.15, 0.05, 0.05]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
           </group>
         );
       case 'q':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.3, 0.35, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.32, 0.38, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.25, 0]}>
-              <cylinderGeometry args={[0.25, 0.28, 0.3, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.22, 0]} castShadow>
+              <cylinderGeometry args={[0.24, 0.3, 0.25, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.5, 0]}>
-              <sphereGeometry args={[0.3, 16, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.42, 0]} castShadow>
+              <cylinderGeometry args={[0.2, 0.24, 0.2, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.82, 0]}>
-              <coneGeometry args={[0.12, 0.25, 8]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.65, 0]} castShadow>
+              <sphereGeometry args={[0.28, 32, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
+            <mesh position={[0, 0.92, 0]} castShadow>
+              <cylinderGeometry args={[0.1, 0.15, 0.12, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            {[0, 1, 2, 3, 4].map((i) => {
+              const angle = (i * Math.PI * 2) / 5;
+              return (
+                <mesh
+                  key={i}
+                  position={[Math.cos(angle) * 0.22, 1.05, Math.sin(angle) * 0.22]}
+                  castShadow
+                >
+                  <sphereGeometry args={[0.08, 16, 16]} />
+                  <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+                </mesh>
+              );
+            })}
           </group>
         );
       case 'k':
         return (
           <group>
-            <mesh position={[0, 0, 0]}>
-              <cylinderGeometry args={[0.3, 0.35, 0.15, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.075, 0]} castShadow>
+              <cylinderGeometry args={[0.32, 0.38, 0.15, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.3, 0]}>
-              <cylinderGeometry args={[0.26, 0.28, 0.4, 16]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.22, 0]} castShadow>
+              <cylinderGeometry args={[0.24, 0.3, 0.25, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.6, 0]}>
-              <cylinderGeometry args={[0.28, 0.25, 0.25, 8]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.42, 0]} castShadow>
+              <cylinderGeometry args={[0.22, 0.24, 0.2, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.82, 0]}>
-              <boxGeometry args={[0.3, 0.08, 0.08]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.62, 0]} castShadow>
+              <cylinderGeometry args={[0.26, 0.22, 0.3, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
-            <mesh position={[0, 0.93, 0]}>
-              <boxGeometry args={[0.08, 0.3, 0.08]} />
-              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            <mesh position={[0, 0.82, 0]} castShadow>
+              <cylinderGeometry args={[0.24, 0.24, 0.15, 8]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.98, 0]} castShadow>
+              <cylinderGeometry args={[0.12, 0.16, 0.18, 32]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 1.12, 0]} castShadow>
+              <boxGeometry args={[0.32, 0.08, 0.08]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 1.26, 0]} castShadow>
+              <boxGeometry args={[0.08, 0.36, 0.08]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.4} roughness={0.5} />
             </mesh>
           </group>
         );
@@ -227,9 +304,27 @@ function Board3DContent({ chess, onMove, playerColor, flipped }: ChessBoard3DPro
 
   return (
     <>
-      <ambientLight intensity={0.6} />
-      <directionalLight position={[5, 10, 5]} intensity={0.8} castShadow />
-      <pointLight position={[-5, 5, -5]} intensity={0.3} />
+      <ambientLight intensity={0.5} />
+      <directionalLight
+        position={[8, 12, 8]}
+        intensity={1.2}
+        castShadow
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+        shadow-camera-far={50}
+        shadow-camera-left={-10}
+        shadow-camera-right={10}
+        shadow-camera-top={10}
+        shadow-camera-bottom={-10}
+      />
+      <pointLight position={[-8, 8, -8]} intensity={0.4} />
+      <spotLight
+        position={[0, 15, 0]}
+        intensity={0.3}
+        angle={Math.PI / 3}
+        penumbra={0.5}
+        castShadow
+      />
 
       {board.map((row, rank) =>
         row.map((piece, file) => {
