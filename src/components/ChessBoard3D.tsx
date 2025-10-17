@@ -36,45 +36,121 @@ function Piece({ type, color, position, onClick, isSelected }: PieceProps) {
     switch (type.toLowerCase()) {
       case 'p':
         return (
-          <>
-            <cylinderGeometry args={[0.2, 0.25, 0.6, 16]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.25, 0.3, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.15, 0]}>
+              <cylinderGeometry args={[0.2, 0.22, 0.3, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.35, 0]}>
+              <sphereGeometry args={[0.15, 16, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       case 'r':
         return (
-          <>
-            <boxGeometry args={[0.4, 0.7, 0.4]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.25, 0]}>
+              <cylinderGeometry args={[0.25, 0.25, 0.5, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.55, 0]}>
+              <cylinderGeometry args={[0.3, 0.25, 0.15, 4]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       case 'n':
         return (
-          <>
-            <coneGeometry args={[0.3, 0.8, 4]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.3, 0]} rotation={[0, 0, Math.PI / 8]}>
+              <coneGeometry args={[0.25, 0.6, 4]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0.1, 0.55, 0]}>
+              <sphereGeometry args={[0.12, 8, 8]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       case 'b':
         return (
-          <>
-            <coneGeometry args={[0.25, 0.9, 16]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.28, 0.32, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.3, 0]}>
+              <cylinderGeometry args={[0.22, 0.25, 0.4, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.6, 0]}>
+              <coneGeometry args={[0.2, 0.4, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.82, 0]}>
+              <sphereGeometry args={[0.08, 16, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       case 'q':
         return (
-          <>
-            <sphereGeometry args={[0.35, 16, 16]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.3, 0.35, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.25, 0]}>
+              <cylinderGeometry args={[0.25, 0.28, 0.3, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.5, 0]}>
+              <sphereGeometry args={[0.3, 16, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.82, 0]}>
+              <coneGeometry args={[0.12, 0.25, 8]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       case 'k':
         return (
-          <>
-            <cylinderGeometry args={[0.3, 0.35, 1, 8]} />
-            <meshStandardMaterial color={pieceColor} />
-          </>
+          <group>
+            <mesh position={[0, 0, 0]}>
+              <cylinderGeometry args={[0.3, 0.35, 0.15, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.3, 0]}>
+              <cylinderGeometry args={[0.26, 0.28, 0.4, 16]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.6, 0]}>
+              <cylinderGeometry args={[0.28, 0.25, 0.25, 8]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.82, 0]}>
+              <boxGeometry args={[0.3, 0.08, 0.08]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+            <mesh position={[0, 0.93, 0]}>
+              <boxGeometry args={[0.08, 0.3, 0.08]} />
+              <meshStandardMaterial color={pieceColor} metalness={0.3} roughness={0.6} />
+            </mesh>
+          </group>
         );
       default:
         return null;
