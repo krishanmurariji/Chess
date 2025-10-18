@@ -78,3 +78,65 @@ Challenge real players worldwide, practice against AI, or enjoy local matches wi
 
 1. **Clone the repository**
 Chess
+
+
+6. **Open your browser**
+- Navigate to `http://localhost:3000`
+
+---
+
+## 🎯 How to Play
+
+- **Play Online**: Click "Play Online" and get instantly matched with a real player worldwide
+- **vs Computer**: Select "Play Computer" to practice against AI opponent
+- **Local 2-Player**: Choose "Local 2-Player" for offline matches with friends
+- **Toggle View**: Switch between 2D and 3D modes anytime during gameplay
+
+---
+
+## 📁 Project Structure
+
+
+---
+
+## 🔮 Future Enhancements
+
+- [ ] Player ratings and ELO system
+- [ ] Global leaderboards
+- [ ] Game history and move analysis
+- [ ] Custom board themes and pieces
+- [ ] Tournament mode
+- [ ] In-game chat functionality
+- [ ] Save and resume games
+- [ ] Time controls (Blitz, Rapid, Classical)
+
+---
+
+## 👨‍💻 Developer
+
+**Krishan Murari**  
+Web Developer & Designer
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/krishanmurariji" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/krishan-murari/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Krishan_murari" height="30" width="40" /></a>
+&nbsp;
+<a href="https://krishanmurari.live/" target="_blank"><img align="center" src="https://img.shields.io/badge/Website-krishanmurari.live-blue" alt="Website" height="30" /></a>
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if you like this project!
+
+---
+
+<p align="center">Made with ❤️ by Krishan Murari</p>
+
